@@ -1,0 +1,1372 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Phần này thuộc header */
+.header {
+  background-color: #000;
+  width: 100%;
+}
+
+.header .navbar{
+    background-color: #000 !important;
+}
+
+/* logo */
+.header .row img {
+  height: 60px;
+  margin-left: 15px;
+}
+
+/* menu */
+.menu {
+  height: 50px;
+  align-items: center;
+}
+
+.menu .sub-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+}
+
+.menu .sub-menu li {
+  list-style-type: none;
+  background-color: transparent;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.menu .sub-menu li a {
+  text-decoration: none;
+  color: #cdcdcd;
+  position: relative;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+}
+
+.menu .sub-menu li a:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 0;
+  left: 0;
+  bottom: -15px;
+  transition: 0.5s;
+  background-color: green;
+}
+
+.menu .sub-menu li a:hover:after {
+  width: 100%;
+}
+
+.menu .sub-menu li a:hover {
+  color: #fff;
+}
+
+.header .col .form {
+  border-radius: 5px;
+  height: 50px;
+  border: #cdcdcd 1px solid;
+}
+
+.form ::placeholder {
+  color: #fff;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.text-ani {
+  animation: showtext infinite linear 1s;
+  text-shadow: 3px 3px 5px green;
+}
+
+@keyframes showtext {
+  0% {
+    color: #cdcdcd;
+  }
+  50% {
+    color: rgb(43, 119, 43);
+    transform: scale(1.1);
+  }
+  100% {
+    color: #cdcdcd;
+  }
+}
+
+/* button bên phải */
+
+.fa-cart-shopping,
+.fa-user,
+.fa-bars {
+  font-size: 25px;
+}
+
+.icon-right .dropdown {
+  display: none;
+}
+
+.icon-right {
+  margin-top: -3rem;
+}
+
+/*phần thân */
+.content {
+  padding: 0 50px;
+  background-color: #eee;
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.content .content-choose {
+  background-color: #fff;
+}
+
+.content .title h3 {
+  margin: 30px 0;
+}
+
+/* Phần card */
+.content .card {
+  margin: auto;
+}
+
+.content .card-body {
+  background-color: #cdcdcd;
+  border-radius: 5px;
+}
+
+.content .icon-header {
+  font-size: 40px;
+}
+
+.content .text-card {
+  font-size: 20px;
+  color: #000;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.content .card-text {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+
+.content .card-body:hover {
+  background-color: #393737;
+  transition: 0.2s;
+}
+
+.content .card-body:hover .icon-header {
+  color: #fff;
+  transition: 0.2s;
+}
+
+.content .card-body:hover .text-card {
+  color: #fff;
+  transition: 0.2s;
+}
+
+.content .card-body:hover .card-text {
+  color: #fff;
+  transition: 0.2s;
+}
+
+.content .card-img-top {
+  height: 300px;
+}
+
+/* Phần chi tiết */
+
+.content .chitiet {
+  margin: 0 150px;
+}
+
+.content .chitiet .mausac img {
+  width: 80px;
+  height: 80px;
+}
+
+.content .chitiet .mausac button {
+  border: none;
+}
+
+.content .chitiet .mausac button:focus {
+  border: 2px solid green;
+}
+
+.content .chitiet .size button {
+  border: none;
+  width: 100px;
+  color: #514c4c;
+  font-weight: bold;
+  margin: 0 5px;
+}
+
+.content .chitiet .size button:focus {
+  color: #fff;
+  background-color: green;
+  border-radius: 5px;
+}
+
+.content .chitiet .soluong button {
+  width: 50px;
+  border: 1px solid #f1eded;
+}
+
+.content .chitiet .soluong button:active {
+  background-color: #cdcdcd;
+}
+
+.content .chitiet .buy button {
+  width: 250px;
+  margin-right: 20px;
+  text-align: center;
+  font-weight: bold;
+  height: 50px;
+}
+
+.content .chitiet .ft-buy {
+  justify-content: space-around;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.content .chitiet .ft-buy p {
+  position: relative;
+  margin-left: 10px;
+}
+
+.content .chitiet .thongtinchitiet img {
+  width: 100%;
+}
+
+.content .chitiet .thongtinchitiet p {
+  font-weight: 600;
+}
+
+.content .chitiet .thongtinchitiet h5 {
+  border-bottom: 3px solid green;
+  padding-bottom: 5px;
+}
+
+/* Giỏ hàng */
+.content .chitiet .tieudechinh {
+  border-bottom: 3px solid #cdcdcd;
+  padding-bottom: 5px;
+}
+
+.content .chitiet .box-sanpham img {
+  width: 100px;
+  height: 100px;
+}
+
+.content .chitiet .box-sanpham .count button {
+  border: none;
+  width: 20px;
+}
+
+.content .chitiet .box-sanpham .count button:active {
+  background-color: #514c4c;
+}
+
+.content .chitiet .total p {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.content .chitiet .total button {
+  width: 100%;
+  height: 40px;
+  border: none;
+  background-color: green;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+
+select{
+  width: 50px;
+  height: 30px;
+  margin-top: 65px !important;
+}
+/* Phần form login */
+
+.content .form {
+  border: 1px solid #cdcdcd;
+  border-radius: 5px;
+  box-shadow: #4a4a4a 2px 2px 5px;
+  margin: auto;
+}
+
+::placeholder {
+  color: #cdcdcd !important;
+}
+
+/* Gioi thieu */
+
+.content .banthan .content-banthan img {
+  width: 200px;
+  height: 250px;
+  border-radius: 5px;
+  border: 5px solid #7e6363;
+  transform: translate(10px, -50px);
+}
+
+.content .banthan {
+  background-image: url(./img/background.png);
+  border-radius: 10px;
+}
+
+.content .content-banthan {
+  margin: 100px 20%;
+  background-color: #cdcdcd;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 4px 4px 5px 3px #5f5050;
+}
+
+.content .content-banthan .name {
+  text-shadow: 2px 2px 5px #1ab11a;
+  border-bottom: 4px solid green;
+}
+
+.content .content-banthan .mxh button {
+  width: 130px;
+  height: 35px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.content .content-banthan .mxh button:hover {
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.content .content-banthan .mxh {
+  justify-content: space-around;
+}
+
+/* Phần best seller */
+.content .best-seller {
+  margin: 60px 10px 0 10px;
+}
+
+/* Phần header best seller */
+.content .best-seller .btn-outline-success {
+  width: 110px;
+}
+
+.best-seller button {
+  width: 150px;
+  height: 50px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+/* Phần sản phẩm product best seller */
+.content .product .card-body:hover .card-title {
+  color: #fff;
+}
+
+.content .card-title {
+  font-size: 18px;
+}
+
+.content .product .card-body .card-text {
+  font-size: 18px;
+}
+
+.content .product .card-img-top:hover {
+  transform: scale(1.03);
+  transition: 0.7s;
+  border-radius: 5px;
+}
+
+.content .product button {
+  width: 150px;
+  height: 50px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+/* Content img */
+.content-img {
+  width: 100%;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.content-img img {
+  width: 85%;
+}
+
+.content-img img:hover {
+  transform: scale(1.05);
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+/* feedbacker */
+.feedbacker {
+  background-color: #eee;
+  margin: 30px;
+  padding-bottom: 30px;
+  border-radius: 5px;
+}
+
+.feedbacker .card {
+  width: 250px;
+  height: 300px;
+  margin: auto;
+}
+
+.feedbacker .card img {
+  height: 100%;
+}
+
+.feedbacker .card:hover img {
+  transform: scale(1.05);
+  transition: 0.7s;
+}
+
+/* Tin noi bat */
+.tinnoibat {
+  margin: 30px 50px 0 50px;
+  padding: 20px;
+}
+
+.tinnoibat .nut {
+  text-align: right;
+}
+
+.tinnoibat .divgiua .card-title {
+  font-size: 20px;
+  animation: showtext1 infinite 1s linear;
+  text-shadow: 2px 2px 5px green;
+}
+
+.tinnoibat .card {
+  cursor: pointer;
+}
+
+@keyframes showtext1 {
+  0% {
+    color: red;
+  }
+  50% {
+    color: rgb(42, 55, 42);
+    transform: scale(1.05);
+  }
+  100% {
+    color: red;
+  }
+}
+
+.tinnoibat .divgiua {
+  display: flex;
+  justify-content: center;
+}
+
+.tinnoibat .khuyen-mai .card:hover {
+  transform: translateY(-5px);
+  transition: 0.5s;
+}
+
+.tinnoibat .khuyen-mai .card:hover .card-title {
+  text-shadow: 2px 2px 5px greenyellow;
+}
+
+/* footer phụ */
+.footer-phu {
+  width: 100%;
+  background-color: #eee;
+  padding: 0 100px;
+  border-top: 1px solid #cdcdcd;
+}
+
+.footer-phu .icon-left {
+  font-size: 40px;
+}
+
+.footer-phu .icon-phai {
+  text-align: right;
+}
+
+/* footer */
+.footer {
+  width: 100%;
+  border-top: 1px #cdcdcd solid;
+}
+
+.footer .content-footer img {
+  width: 150px;
+  height: 80px;
+}
+
+.footer .content-footer .content-footer-left {
+  border-right: 1px solid #cdcdcd;
+}
+
+.footer .content-footer .content-nd li {
+  list-style-type: none;
+  margin-left: -30px;
+}
+
+.footer .content-footer .content-nd li a {
+  text-decoration: none;
+  color: #4a4a4a;
+}
+/* TABLE */
+@media screen and (max-width: 48em) {
+  /* Phần này thuộc header */
+  .header {
+    background-color: #000;
+    width: 100%;
+  }
+
+  /* logo */
+  .header .row img {
+    height: 80px;
+    margin-left: 15px;
+  }
+
+  /* menu */
+  .menu {
+    height: 50px;
+    align-items: center;
+    display: none;
+  }
+
+  .menu .sub-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+  }
+
+  .menu .sub-menu li {
+    list-style-type: none;
+    background-color: transparent;
+    padding: 15px 0;
+    text-align: center;
+  }
+
+  .menu .sub-menu li a {
+    text-decoration: none;
+    color: #cdcdcd;
+    position: relative;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+  }
+
+  .menu .sub-menu li a:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 0;
+    left: 0;
+    bottom: -15px;
+    transition: 0.5s;
+    background-color: green;
+  }
+
+  .menu .sub-menu li a:hover:after {
+    width: 100%;
+  }
+
+  .menu .sub-menu li a:hover {
+    color: #fff;
+  }
+
+  .header .col .form {
+    border-radius: 5px;
+    height: 50px;
+    border: #cdcdcd 1px solid;
+    display: none;
+  }
+
+  .form ::placeholder {
+    color: #fff;
+    font-size: 14px;
+    font-style: italic;
+  }
+
+  .text-ani {
+    animation: showtext infinite linear 1s;
+    text-shadow: 3px 3px 5px green;
+  }
+
+  @keyframes showtext {
+    0% {
+      color: #cdcdcd;
+    }
+    50% {
+      color: rgb(43, 119, 43);
+      transform: scale(1.1);
+    }
+    100% {
+      color: #cdcdcd;
+    }
+  }
+
+  /* button bên phải */
+
+  .fa-cart-shopping,
+  .fa-user {
+    font-size: 25px;
+  }
+
+  .icon-right .dropdown {
+    display: block;
+  }
+
+  .icon-right {
+    padding-top: 1rem;
+  }
+
+  /*phần thân */
+  .content {
+    padding: 0 50px;
+    background-color: #eee;
+    position: relative;
+    padding-bottom: 30px;
+  }
+
+  .content .content-choose {
+    background-color: #fff;
+  }
+
+  .content .title h3 {
+    margin: 30px 0;
+  }
+
+  /* Phần card */
+  .content .title .card {
+    margin: auto;
+  }
+
+  .content .card-body {
+    background-color: #cdcdcd;
+    border-radius: 5px;
+  }
+
+  .content .icon-header {
+    font-size: 40px;
+  }
+
+  .content .text-card {
+    font-size: 20px;
+    color: #000;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+
+  .content .card-text {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+  }
+
+  .content .card-body:hover {
+    background-color: #393737;
+    transition: 0.2s;
+  }
+
+  .content .card-body:hover .icon-header {
+    color: #fff;
+    transition: 0.2s;
+  }
+
+  .content .card-body:hover .text-card {
+    color: #fff;
+    transition: 0.2s;
+  }
+
+  .content .card-body:hover .card-text {
+    color: #fff;
+    transition: 0.2s;
+  }
+
+  /* Phần chi tiết */
+
+  .content .chitiet {
+    margin: 0 15px;
+  }
+
+  /* Gioi thieu */
+
+  .content .banthan .content-banthan img {
+    width: 250px;
+    height: 250px;
+    border-radius: 150px;
+    border: 5px solid #7e6363;
+    margin: 60px 100px 10px 90px;
+  }
+
+  .content .banthan {
+    background-image: url(./img/background.png);
+    border-radius: 10px;
+  }
+
+  .content .content-banthan {
+    margin: 100px 20%;
+    background-color: #cdcdcd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 4px 4px 5px 3px #5f5050;
+  }
+
+  .content .content-banthan .name {
+    text-shadow: 2px 2px 5px #1ab11a;
+    border-bottom: 4px solid green;
+  }
+
+  .content .content-banthan .mxh button {
+    width: 80px;
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+
+  .content .content-banthan .mxh button:hover {
+    opacity: 0.8;
+    transition: 0.3s;
+  }
+
+  .content .content-banthan .mxh {
+    justify-content: space-around;
+  }
+
+  /* Phần best seller */
+  .content .best-seller {
+    margin: 60px 20px 0 20px;
+  }
+
+  /* Phần header best seller */
+  .content .best-seller .btn-outline-success {
+    width: 110px;
+  }
+
+  /* Phần sản phẩm product best seller */
+  .content .product .card-body:hover .card-title {
+    color: #fff;
+  }
+
+  .content .product .card-body .card-text {
+    font-size: 20px;
+  }
+
+  .content .product .card-img-top:hover {
+    transform: scale(1.03);
+    transition: 0.7s;
+    border-radius: 5px;
+  }
+
+  .content .product button {
+    width: 150px;
+    height: 50px;
+    margin: auto;
+    margin-top: 30px;
+  }
+
+  /* Content img */
+  .content-img {
+    width: 100%;
+    text-align: center;
+    margin: 40px 0;
+  }
+
+  .content-img img {
+    width: 85%;
+  }
+
+  .content-img img:hover {
+    transform: scale(1.05);
+    transition: 0.7s;
+    cursor: pointer;
+  }
+
+  /* feedbacker */
+  .feedbacker {
+    background-color: #eee;
+    margin: 30px;
+    padding-bottom: 30px;
+    border-radius: 5px;
+  }
+
+  .feedbacker .card {
+    width: 250px;
+    height: 300px;
+    margin: auto;
+  }
+
+  .feedbacker .card img {
+    height: 100%;
+  }
+
+  .feedbacker .card:hover img {
+    transform: scale(1.05);
+    transition: 0.7s;
+  }
+
+  /* Tin noi bat */
+  .tinnoibat {
+    margin: 30px 50px 0 50px;
+    padding: 20px;
+  }
+
+  .tinnoibat .nut {
+    text-align: right;
+  }
+
+  .tinnoibat .divgiua .card-title {
+    font-size: 20px;
+    animation: showtext1 infinite 1s linear;
+    text-shadow: 2px 2px 5px green;
+  }
+
+  .tinnoibat .card {
+    cursor: pointer;
+  }
+
+  @keyframes showtext1 {
+    0% {
+      color: red;
+    }
+    50% {
+      color: rgb(42, 55, 42);
+      transform: scale(1.05);
+    }
+    100% {
+      color: red;
+    }
+  }
+
+  .tinnoibat .divgiua {
+    display: flex;
+    justify-content: center;
+  }
+
+  .tinnoibat .khuyen-mai {
+    text-align: center;
+  }
+
+  .tinnoibat .khuyen-mai .card {
+    margin: 0 45px;
+  }
+
+  .tinnoibat .khuyen-mai .card:hover {
+    transform: translateY(-5px);
+    transition: 0.5s;
+  }
+
+  .tinnoibat .khuyen-mai .card:hover .card-title {
+    text-shadow: 2px 2px 5px greenyellow;
+  }
+
+  /* footer phụ */
+  .footer-phu {
+    width: 100%;
+    background-color: #eee;
+    padding: 0 100px;
+  }
+
+  .footer-phu .icon-left {
+    font-size: 40px;
+  }
+
+  .footer-phu .icon-phai {
+    text-align: center;
+  }
+
+  /* footer */
+  .footer {
+    width: 100%;
+    border-top: 1px #cdcdcd solid;
+  }
+
+  .footer .content-footer img {
+    width: 150px;
+    height: 80px;
+  }
+  .footer-phu {
+    padding: 0 10px;
+  }
+  .footer-phu .footer-row .col {
+    min-width: 9.375em;
+
+  }
+  .footer .content-footer .content-footer-left {
+    border-right: 1px solid #cdcdcd;
+  }
+
+  .footer .content-footer .content-nd li {
+    list-style-type: none;
+  }
+
+  .footer .content-footer .content-nd li a {
+    text-decoration: none;
+    color: #4a4a4a;
+  }
+
+  .footer .content-footer-right {
+    padding: 0 300px;
+  }
+}
+/* SMART PHONE */
+@media screen and (max-width: 23.4375em) {
+  /* Phần này thuộc header */
+  .header {
+    background-color: #000;
+    width: 100%;
+  }
+
+  /* logo */
+  .header .row img {
+    height: 80px;
+    padding: 10px 70px;
+  }
+
+  /* menu */
+  .menu {
+    height: 50px;
+    align-items: center;
+    display: none;
+  }
+
+  .menu .sub-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+  }
+
+  .menu .sub-menu li {
+    list-style-type: none;
+    background-color: transparent;
+    padding: 15px 0;
+    text-align: center;
+  }
+
+  .menu .sub-menu li a {
+    text-decoration: none;
+    color: #cdcdcd;
+    position: relative;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+  }
+
+  .menu .sub-menu li a:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 0;
+    left: 0;
+    bottom: -15px;
+    transition: 0.5s;
+    background-color: green;
+  }
+
+  .menu .sub-menu li a:hover:after {
+    width: 100%;
+  }
+
+  .menu .sub-menu li a:hover {
+    color: #fff;
+  }
+
+  .header .col .form {
+    border-radius: 5px;
+    height: 50px;
+    border: #cdcdcd 1px solid;
+    display: none;
+  }
+
+  .form ::placeholder {
+    color: #fff;
+    font-size: 14px;
+    font-style: italic;
+  }
+
+  .text-ani {
+    animation: showtext infinite linear 1s;
+    text-shadow: 3px 3px 5px green;
+  }
+
+  @keyframes showtext {
+    0% {
+      color: #cdcdcd;
+    }
+    50% {
+      color: rgb(43, 119, 43);
+      transform: scale(1.1);
+    }
+    100% {
+      color: #cdcdcd;
+    }
+  }
+
+  /* button bên phải */
+
+  .fa-cart-shopping,
+  .fa-user {
+    font-size: 25px;
+  }
+
+  .icon-right .dropdown {
+    display: block;
+  }
+
+  .icon-right {
+    padding-top: 1rem;
+  }
+
+  /*phần thân */
+  .content {
+    background-color: #eee;
+    padding-bottom: 30px;
+    width: 100%;
+    margin: 0 !important;
+  }
+
+  .content .content-choose {
+    background-color: #fff;
+  }
+
+  .content .title h3 {
+    margin: 20px 0;
+    font-size: 15px;
+  }
+
+  /* Phần card */
+  .content .title .card {
+    margin: auto;
+  }
+
+  .content .card-body {
+    background-color: #cdcdcd;
+    border-radius: 5px;
+  }
+
+  .content .icon-header {
+    font-size: 40px;
+  }
+
+  .content .text-card {
+    font-size: 20px;
+    color: #000;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+
+  .content .card-text {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+  }
+
+  .content .card-body:hover {
+    background-color: #393737;
+    transition: 0.2s;
+  }
+
+  .content .card-body:hover .icon-header {
+    color: #fff;
+    transition: 0.2s;
+  }
+
+  .content .card-body:hover .text-card {
+    color: #fff;
+    transition: 0.2s;
+  }
+
+  .content .card-body:hover .card-text {
+    color: #fff;
+    transition: 0.2s;
+  }
+
+  /* Phần chi tiết */
+
+  .content .chitiet {
+    margin: 0 15px;
+  }
+
+  /* Gioi thieu */
+
+  .content .banthan .content-banthan img {
+    border-radius: 150px;
+    border: 5px solid #7e6363;
+    width: 150px;
+    height: 150px;
+    margin: 60px 80px 0 70px;
+  }
+
+  .content .banthan {
+    background-image: url(./img/background.png);
+    border-radius: 10px;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .content .content-banthan {
+    margin: 100px 20%;
+    background-color: #cdcdcd;
+    border-radius: 5px;
+    padding: 10px 15px 10px 10px;
+    box-shadow: 4px 4px 5px 3px #5f5050;
+    margin: inherit;
+  }
+
+  .content .content-banthan .name {
+    text-shadow: 2px 2px 5px #1ab11a;
+    border-bottom: 4px solid green;
+  }
+
+  .content .content-banthan .mxh button {
+    width: 50px;
+    height: 35px;
+    border: none;
+    font-size: 20px;
+  }
+
+  .content .content-banthan .mxh button:hover {
+    opacity: 0.8;
+    transition: 0.3s;
+  }
+
+  .content .content-banthan .mxh {
+    justify-content: space-around;
+  }
+
+  /* Phần best seller */
+  .content .best-seller {
+    margin: 60px 20px 0 20px;
+  }
+
+  /* Phần header best seller */
+  .content .best-seller .btn-outline-success {
+    width: 110px;
+  }
+
+  /* Phần sản phẩm product best seller */
+  .content .product .card-body:hover .card-title {
+    color: #fff;
+  }
+
+  .content .product .card-body .card-text {
+    font-size: 20px;
+  }
+
+  .content .product .onecard {
+    padding: inherit;
+    /* background-color: red; */
+  }
+
+  .content .product .card-img-top:hover {
+    transform: scale(1.03);
+    transition: 0.7s;
+    border-radius: 5px;
+  }
+
+  .content .product button {
+    width: 150px;
+    height: 50px;
+    margin: auto;
+    margin-top: 30px;
+  }
+
+  /* Content img */
+  .content-img {
+    width: 100%;
+    text-align: center;
+    margin: 40px 0;
+  }
+
+  .content-img img {
+    width: 85%;
+  }
+
+  .content-img img:hover {
+    transform: scale(1.05);
+    transition: 0.7s;
+    cursor: pointer;
+  }
+
+  /* feedbacker */
+  .feedbacker {
+    background-color: #eee;
+    margin: 30px;
+    padding-bottom: 30px;
+    border-radius: 5px;
+  }
+
+  .feedbacker .card {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+  }
+
+  .feedbacker .card img {
+    height: 100%;
+  }
+
+  .feedbacker .card:hover img {
+    transform: scale(1.05);
+    transition: 0.7s;
+  }
+
+  /* Tin noi bat */
+  .tinnoibat {
+    margin: 30px 50px 0 50px;
+    padding: 20px;
+  }
+
+  .tinnoibat h3 {
+    margin-right: none !important;
+  }
+
+  .tinnoibat .nut {
+    text-align: right;
+  }
+
+  .tinnoibat .divgiua .card-title {
+    font-size: 20px;
+    animation: showtext1 infinite 1s linear;
+    text-shadow: 2px 2px 5px green;
+  }
+
+  .tinnoibat .card {
+    cursor: pointer;
+  }
+
+  @keyframes showtext1 {
+    0% {
+      color: red;
+    }
+    50% {
+      color: rgb(42, 55, 42);
+      transform: scale(1.05);
+    }
+    100% {
+      color: red;
+    }
+  }
+
+  .tinnoibat .divgiua {
+    display: flex;
+    justify-content: center;
+  }
+
+  .tinnoibat .divgiua img {
+    width: 230px;
+  }
+
+  .tinnoibat .khuyen-mai {
+    text-align: center;
+  }
+
+  .tinnoibat .khuyen-mai .onecard {
+    margin: inherit;
+  }
+
+  .tinnoibat .khuyen-mai .onecard img {
+    padding-right: 15px;
+  }
+
+  .tinnoibat .khuyen-mai .twocard img {
+    padding-right: 15px;
+  }
+
+  .tinnoibat .khuyen-mai .card:hover {
+    transform: translateY(-5px);
+    transition: 0.5s;
+  }
+
+  .tinnoibat .khuyen-mai .card:hover .card-title {
+    text-shadow: 2px 2px 5px greenyellow;
+  }
+
+   
+
+  /* footer phụ */
+  .footer-phu {
+    width: 100%;
+    background-color: #eee;
+    padding: 0;
+    display: flex;
+  }
+  .footer-phu .footer-row {
+    flex-wrap: wrap ;
+    margin: 0;
+  }
+  .footer-phu .footer-row .col {
+    min-width: 9.375em;
+
+  } 
+  .footer-phu .icon-left {
+    font-size: 40px;
+  }
+
+  .footer-phu .icon-phai {
+    text-align: center;
+  }
+
+  /* footer */
+  .footer {
+    width: 100%;
+    border-top: 1px #cdcdcd solid;
+  }
+
+  .footer .content-footer img {
+    width: 150px;
+    height: 80px;
+  }
+
+  .footer .content-footer .content-footer-left {
+    border-right: none;
+  }
+
+  .footer .content-footer .content-nd li {
+    list-style-type: none;
+  }
+
+  .footer .content-footer .content-nd li a {
+    text-decoration: none;
+    color: #4a4a4a;
+  }
+
+  .footer .content-footer-right {
+    padding: 0 300px;
+  }
+}
+ /* big landscape tablets, laptops, and desktops */ 
+@media (max-width:64.0625em) {
+  /* CONTENT */
+  .content {
+    padding: 0;
+  }
+  /* BEST SELLER */
+  /* .bestSeller__container .onecard  {
+    padding: 0 5px;
+  }
+  .bestSeller__container .onecard .card {
+      width: 12em !important;
+      height: 31.875em !important;
+  }
+  .bestSeller__container .onecard .card .card-img-top {
+    width: 14.0625em;
+  }
+  .bestSeller__container .onecard .card .card-body {
+    width: 14.0625em;
+  } */
+}
+.active {
+  background-color: #1ab11a;
+}
+
+.active-border {
+  border: 3px solid #1ab11a !important;
+}
